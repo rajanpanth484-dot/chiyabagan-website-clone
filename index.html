@@ -117,11 +117,13 @@
 
             .section-4 {
                 padding: 10px !important;
-                padding-bottom: 115vh !important;
+                padding-bottom: 20vh !important;
                 /* height: !important; */
                 background-origin: center !important;
                 overflow: visible;
-
+                top: -200% !important; 
+                /* position: static !important; */
+                
             }
 
             .image-container {
@@ -244,7 +246,35 @@
             height: fit-content;
         }
 
+        .footer-contents ul{
+            font-size: 20px;
+        }
+
+                .footer-contents h2{
+            font-size: 30px !important;
+        }
+
       
+    }
+
+    @media (min-width:577px) and (max-width:915px) {
+
+
+        .testimonials-cards-container{
+            /* flex-direction: column !important; */
+            display: flex;
+            flex-wrap: wrap ;
+            width: 80% !important;
+            /* align-items: center !important; */
+            gap: 30px !important;
+            justify-content: space-between !important;
+            /* padding: 0 20px; */
+            margin: 0 auto !important;
+        }
+
+        .card-testimonial{
+            width: 45% !important;
+        }
     }
 
         .text-outside {
@@ -770,7 +800,12 @@
             gap: 20px;
             grid-template-rows: 2;
             grid-auto-flow: row;
-            text-align: center;
+            /* margin: 0 auto; */
+            /* padding: 50px; */
+            /* text-align: center; */
+            /* align-items: center; */
+            justify-content: center;
+padding: 20px 50px 50px 50px;
         }
 
         .logo{
@@ -780,33 +815,38 @@
          .heading-footer{
             display:none;
          }
- 
-        /* .about-us{
-            grid-column: 2/3;
-            grid-row: 2/3;
-        } */
-/* .dhc{
-    grid-column: 2/3;
-    grid-row: 1/2;
-} */
-        /* .about-us{
-            grid-column: 2/3;
-}
-        .our-products{
-            grid-column: 3/4;
-        }
 
-        .our-collections{
-            grid-column: 4/5;
-        }
+         .footer-contents .logo{
+            padding: 0 !important;
+            margin: 0 !important;
+            align-self: center;
+         }
 
-        .contact-us{
-            grid-column: 5;
-        }
- */
-ul li{
-    list-style: none;
+
+.footer-items{
+    text-align: center;
 }
+
+ .footer-items ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+ }
+
+ @media (width<=851px) {
+    .dhc{
+        font-size: 20px !important;
+    }
+
+    .logo{
+        width: 100px !important;
+    }
+
+    .footer-contents{
+        gap: 10px;
+        padding: 20px
+    }
+ }
 
     </style>
 
@@ -1013,7 +1053,7 @@ ul li{
 
         <h1 class="text-center"> <span class="yellow">What our</span> <span class="yelllow">Clients say</span></h1>
 
-        <div class="testimonials-cards-container d-flex justify-content-around align-items-center mt-4  pb-5">
+        <div class="testimonials-cards-container d-flex justify-content-around mt-4  pb-5">
             <div class="card-testimonial">
                 <div class="card-header w-100 d-flex align-items-start gap-4">
                     <div class="profile-picture">
@@ -1108,12 +1148,12 @@ ul li{
         <div class="logo">
             <img src="chiya-logo.png" class="logo" alt="Logo">
         </div>
-        <h2 class="dhc">About Us</h2>
-        <h2 class="dhc">Our Products</h2>
-        <h2 class="dhc">Our Collections</h2>
-        <h2 class="dhc">Contact Us</h2>
+        <h2 class="dhc text-center">About Us</h2>
+        <h2 class="dhc text-center">Our Products</h2>
+        <h2 class="dhc text-center">Our Collections</h2>
+        <h2 class="dhc text-center">Contact Us</h2>
              
-            <div class="about-us">
+            <div class="footer-items">
                <h2 class="heading-footer">About Us</h2>
                <ul>
                 <li>Our Story</li>
@@ -1121,7 +1161,7 @@ ul li{
                </ul>
                </div>
               
-               <div class="our-products">
+               <div class="footer-items">
               <h2 class="heading-footer">Our Products</h2>
                <ul>
                 <li>Green Tea</li>
@@ -1133,7 +1173,7 @@ ul li{
                </ul>
                </div>
                
-               <div class="our-collections">
+               <div class="footer-items">
               <h2 class="heading-footer">Our Collections</h2>
                <ul>
                 <li>Our complete Blogs</li>
@@ -1141,7 +1181,7 @@ ul li{
                </ul>
                </div>
                 
-               <div class="contact-us">
+               <div class="footer-items">
                 <h2 class="heading-footer">Contact Us</h2>
                <ul>
                 <li>980-7440817</li>
