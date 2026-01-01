@@ -761,9 +761,10 @@
         }
 
         .stars {
-            width: 15%;
-            height: 15%;
-            margin-right: 5px;
+            width: 27px;
+            height: 27px;
+            box-sizing: border-box;
+            /* margin-right: 5px; */
             /* flex-wrap: wrap !important; */
         }
 
@@ -805,7 +806,7 @@
         }
 
         .footer-section .logo{
-            width: 200px;
+            width: 300px;
             margin: 20px;
         }
 
@@ -820,7 +821,22 @@
             /* text-align: center; */
             /* align-items: center; */
             justify-content: center;
-padding: 20px 50px 50px 50px;
+            padding: 20px 50px 50px 50px;
+        }
+
+        .footer-contents h2{
+            color: #3e3010;
+            font-weight: bolder;
+        } 
+
+        .footer-items h2{
+            color: #3e3010;
+            font-weight: bolder;
+        }
+
+        .footer-items ul li{
+            font-size: 18px;
+            font-weight: normal;
         }
 
         .logo{
@@ -835,6 +851,10 @@ padding: 20px 50px 50px 50px;
             padding: 0 !important;
             margin: 0 !important;
             align-self: center;
+         }
+
+         .footer-footer{
+            font-size: 18px;;
          }
 
 
@@ -1203,9 +1223,18 @@ padding: 20px 50px 50px 50px;
                 <li>Bhagwati Tole, Butwal</li>
                 <li>info@chiyabagan.com</li>
                </ul>
-
+              
+               <div class="info-icons d-flex flex-wrap gap-3 justify-content-center mt-2">
+                <img src="facebook.png" width="25px" alt="Facebook">
+                <img src="instagram.png" width="25px" alt="Facebook">
+                <img src="tiktok.png" width="25px" alt="Facebook">
+                <img src="message.png" width="25px" alt="Facebook">
+               </div>
                
         </div>
+        </div>
+
+        <p class="text-center footer-footer">Chiya Bagan. Â©2025. All Rights Reserved.</p>
 
         <!-- asdsfdsf -->
     </footer>
